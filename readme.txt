@@ -1,5 +1,5 @@
 ------------------------------
-MAGAZASS THEME
+MAGAZAZZ THEME
 ------------------------------
 
 Thanks for using the Magazazz theme. This is a minimal and modern magazine-style blog theme with a grid layout and support for multiple authors.
