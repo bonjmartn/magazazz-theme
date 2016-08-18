@@ -37,14 +37,14 @@ class social_widget_footer extends WP_Widget {
       echo $args['before_title'] . apply_filters( 'widget_title', $instance['title'] ). $args['after_title'];
     }
  
-    $facebook = $instance['facebook'];
-    $twitter = $instance['twitter'];
-    $pinterest = $instance['pinterest'];
-    $instagram = $instance['instagram'];
-    $googleplus = $instance['googleplus'];
-    $tumblr = $instance['tumblr'];
-    $youtube = $instance['youtube'];
-    $linkedin = $instance['linkedin'];
+    $facebook = esc_url( $instance['facebook'] );
+    $twitter = esc_url( $instance['twitter'] );
+    $pinterest = esc_url( $instance['pinterest'] );
+    $instagram = esc_url( $instance['instagram'] );
+    $googleplus = esc_url( $instance['googleplus'] );
+    $yelp = esc_url( $instance['yelp'] );
+    $youtube = esc_url( $instance['youtube'] );
+    $linkedin = esc_url( $instance['linkedin'] );
 
     if ( ! empty( $instance['facebook'] ) ) {
       echo sprintf( '<a href="' . $facebook . '"><i class="fa fa-facebook"></i></a> <a href="' . $facebook . '">Facebook</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;');
