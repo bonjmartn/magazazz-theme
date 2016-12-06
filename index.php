@@ -24,7 +24,7 @@
 
                 <h2 class="title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 
-                <p class="author-text">Posted on <?php echo the_time('F jS, Y');?> by <?php the_author(); ?></p>            
+                <p class="author-text">Posted on <?php echo the_time('F jS, Y');?> by <?php the_author_posts_link(); ?> </p>            
 
                 <?php the_excerpt(); ?>
 

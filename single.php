@@ -18,12 +18,12 @@
           <p id="post-image-warning">Recommended size: 1000px (or more) in width and 600px (or more) in height.</p>
       <?php endif; ?>
 
-    <div class="post-text-overlay">
+          <div class="post-text-overlay">
       <div class="post-header">
         <h1><?php the_title(); ?></h1>
 
         <p><em>
-        By <?php the_author(); ?>
+        By <?php the_author_posts_link(); ?> 
         on <?php echo the_time('F jS, Y');?>
         with <a href="<?php comments_link(); ?>"><?php comments_number(); ?></a>
         </em></p>
@@ -32,18 +32,20 @@
 
     </div> 
 
+ 
+
     <?php the_content(); ?>
 
     <?php
         $defaults = array(
-          'before'           => '<p>' . __( 'Pages:', 'magazazz-free' ),
+          'before'           => '<p>' . __( 'Pages:', 'magazazz' ),
           'after'            => '</p>',
           'link_before'      => '',
           'link_after'       => '',
           'next_or_number'   => 'number',
           'separator'        => ' ',
-          'nextpagelink'     => __( 'Next page', 'magazazz-free' ),
-          'previouspagelink' => __( 'Previous page', 'magazazz-free' ),
+          'nextpagelink'     => __( 'Next page', 'magazazz' ),
+          'previouspagelink' => __( 'Previous page', 'magazazz' ),
           'pagelink'         => '%',
           'echo'             => 1
         );
